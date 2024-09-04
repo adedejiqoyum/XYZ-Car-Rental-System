@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title><h1>Car Rental</h1></title>
+<style>
+form{
+width: 800px;
+background: black;
+padding: 20px;
+font-size: 20px;
+font-family: Arial;
+color: white;
+Margin: Auto;
+}
+input[type = text]{
+padding: 5px;
+font-size: 20px;
+width: 700px;
+border-radius: 10px;
+}
+input[type = submit]{
+padding: 5px;
+font-size: 20px;
+width: 200px;
+border-radius: 10px;
+border: none;
+}
+input[type = reset]{
+padding: 5px;
+font-size: 20px;
+width: 200px;
+border-radius: 10px;
+border: none;
+}
+table, th, td{
+border:1px solid green;
+}
+table{
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+</style>
+</head>
+<body>
+
+<form method="post" action="CarRental.php">
+<table >
+<tr>
+<th colspan="2">XYZ Car Rental</th>
+</tr>
+<tr>
+<td>Customer Name </td>
+<td><input type= "text" name="name"></td>
+</tr>
+<tr>
+<td>Customer Email </td>
+<td><input type= "text" name="email"></td>
+</tr>
+<tr>
+<td>Customer Phone </td>
+<td><input type= "text" name="phone"></td>
+</tr>
+<tr>
+<td>Rental Number of Days </td>
+<td><input type= "number" name="days"></td>
+</tr>
+<tr>
+<td>Car Size</td>
+<td>
+    <input type="radio" name="car_size" value="Full"> Full
+    <input type="radio" name="car_size" value="Medium"> Medium
+    <input type="radio" name="car_size" value="Small"> Small
+</td>
+</tr>
+<tr>
+<th colspan="2"><input type= "submit" Value= "Submit">
+<input type= "reset" Value= "Reset"></th>
+</tr>
+</form>
+</table>
+</body>
+</html>
